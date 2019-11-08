@@ -1,3 +1,4 @@
+const testId = process.env.TestId || 'default';
 const DescribeFailureReporter = require('protractor-stop-describe-on-failure');
 var request = require('request-promise');
 
@@ -30,6 +31,7 @@ var myReporter = {
 
   specDone: function(result) {
     var specresult={}
+    specresult['testId']=testId
     specresult['eventType']='TestResult_2'
     specresult['testsuite']=testsuite_name
     specresult['describe']=describe_name
