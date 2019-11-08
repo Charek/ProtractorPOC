@@ -30,7 +30,7 @@ var myReporter = {
 
   specDone: function(result) {
     var specresult={}
-    specresult['eventType']='TestResult_1'
+    specresult['eventType']='TestResult_2'
     specresult['testsuite']=testsuite_name
     specresult['describe']=describe_name
     specresult['it']=result.description

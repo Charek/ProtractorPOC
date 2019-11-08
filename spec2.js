@@ -1,6 +1,6 @@
 
 
-describe('E2E testsuite2', function() {
+describe('E2E testsuiteB', function() {
 
   var firstNumber = element(by.model('first'));
   var secondNumber = element(by.model('second'));
